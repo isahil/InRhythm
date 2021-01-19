@@ -39,7 +39,7 @@ describe('Unit tests for longestWordInASentence method implementation', () => {
 
     test("Passing special characters as string in a sentence", () => {
         const {maxLength, longestWord} = helper.longestWordInASentence('When the cow got angry he screamed m@@@@@@@@');
-        //special characters in a word will be treated as valid & will be counted as part of the word
+        //special characters in a word will be treated as valid characters & will be counted as part of the word.
         expect(maxLength).toBeTruthy()
         expect(longestWord).toMatch('m@@@@@@@@');
     })
